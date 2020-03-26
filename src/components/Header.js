@@ -11,7 +11,7 @@ import {
   getTopNews,
   getSearchedNews,
   selectedCountrySelector,
-  countrySelectDisabledSelector,
+  countrySelectDisabledSelector
 } from "../features/news/newsSlice";
 
 export function Header() {
@@ -68,12 +68,12 @@ export function Header() {
           <FormControl
             onChange={e => setSearchTerm(e.target.value)}
             type="text"
-            placeholder="Search"
+            placeholder="Search and click the button"
             value={searchTerm}
           />
 
           <Button
-            style={{marginLeft: "20px", marginRight: "20px"}}
+            style={{ marginLeft: "20px", marginRight: "20px" }}
             id="search-button"
             onClick={() => searchAndRedirect(selectedCountry, searchTerm)}
             variant="outline-success"
