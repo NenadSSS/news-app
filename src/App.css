@@ -31,9 +31,53 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(10px)
+    transform: translateY(10px);
   }
   100% {
-    transform: translateY(0px)
+    transform: translateY(0px);
+  }
+}
+
+.menu-item-wrapper.active {
+  border: none !important;
+}
+
+.menu-item {
+  padding: 0 40px;
+  margin: 5px 10px;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+}
+.menu-item-wrapper.active {
+  border: 1px blue solid;
+}
+.menu-item.active {
+  border: 1px green solid;
+}
+
+.scroll-menu-arrow {
+  padding: 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  #appContainer {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+  }
+
+  #search-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px !important;
+  }
+
+  .country-button {
+    width: 20%;
+  }
+  .country-a {
+    padding: 15px;
   }
 }
